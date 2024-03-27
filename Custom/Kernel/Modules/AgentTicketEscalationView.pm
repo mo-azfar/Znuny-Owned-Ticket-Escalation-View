@@ -229,9 +229,9 @@ sub Run {
                 Permission                    => $Config->{'TicketPermission'},
             },
         },
-        # --
+        # ---
         # add filter for owned ticket
-        # --
+        # ---
         TodayMine => {
             Name   => Translatable('Today (Mine)'),
             Prio   => 3001,
@@ -265,7 +265,7 @@ sub Run {
                 UserID                        => 1,
             },
         },
-        # --
+        # ---
     );
 
     my $Filter = $ParamObject->GetParam( Param => 'Filter' ) || 'Today';
